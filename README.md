@@ -46,7 +46,7 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
        - Response (`application/taxii+json`): `{ objects, sourcesystem, more, next }` with `ETag`, `Last-Modified` <br/>
 
 ## :gear: Environment Variables (file)
-:heavy_exclamation_mark: Be sure to <span style="color:red; font-weight:bold;">RENAME</span> .env.example :arrow_right: .env before deployment! <br/>
+❌ Be sure to <span style="color:red; font-weight:bold;">RENAME</span> .env.example :arrow_right: .env before deployment! <br/>
 :eyes: `.env.example`. Notable:
 - `API_KEYS` — comma-separated keys (enables auth when set)
 - `GENERATE_EVERY_SECONDS` — default 10800 (3h)
