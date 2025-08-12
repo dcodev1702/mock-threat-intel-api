@@ -16,6 +16,7 @@
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
  Run the continaerized Mock TI API Endpoint solution 
+ -`Synthetic Threat Indicators are generated at boot and every 3 hours (default)`
 ```python
 docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env-file .\.env  mock-sc-xgen-ti-api-alpine:latest
 ```
