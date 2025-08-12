@@ -46,6 +46,7 @@ See `.env`. Notable:
 
 ## MOCK TI REST API ENDPOINT
 -`Generate synthetic TI indicators and provide a mock TI REST API endpoint to pull JSON array of stixobjects (indicators) from.`
+-`CMD: curl -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" http://192.168.10.27/api/v1/indicators | jq .`
 <img width="893" height="1192" alt="image" src="https://github.com/user-attachments/assets/97b5a238-6408-475d-bc76-e17fa4efd17b" />
 
 <img width="2148" height="1039" alt="image" src="https://github.com/user-attachments/assets/083fde62-9bc7-43df-b082-cd697f09f643" />
