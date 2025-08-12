@@ -45,8 +45,9 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 :link: `GET /taxii2/root/collections/{id}/objects?limit=...&added_after=...&types=...&next=...` <br/>
        - Response (`application/taxii+json`): `{ objects, sourcesystem, more, next }` with `ETag`, `Last-Modified` <br/>
 
-## Env
-See `.env`. Notable:
+## :gear: Environment Variables (file)
+:heavy_exclamation_mark: Be sure to rename .env.example :arrow_right: .env before deployment!
+See `.env.example`. Notable:
 - `API_KEYS` — comma-separated keys (enables auth when set)
 - `GENERATE_EVERY_SECONDS` — default 10800 (3h)
 - `TAXII_INDICATORS_ONLY` — force TAXII to indicators only
