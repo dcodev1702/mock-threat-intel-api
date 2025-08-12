@@ -66,7 +66,7 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 
 ## ↔️ Transmit TI JSON [stixobjects] from Mock REST API to Sentinel's TI Upload API (Preview) for enhanced Threat Detection
 :link: [Microsoft Sentinel TI Upload Preview API](https://learn.microsoft.com/en-us/azure/sentinel/stix-objects-api) <br/>
-☝️ This assumes & requires the following:
+☝️ This assumes & requires the following: <br/>
     * An Azure Subscription
     * Priviledged Access
     * A Sentinel Enabled Log Analytics Workspace (LAW)
