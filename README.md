@@ -20,7 +20,9 @@ docker build -t mock-sc-xgen-ti-api-alpine .
 ```python
 docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env-file .\.env  mock-sc-xgen-ti-api-alpine:latest
 ```
-Query SC X-GEN TI API Endpoint (w/ auth)
+Query SC X-GEN TI API Endpoint (w/ auth) <br/>
+-`Default API KEY is provided via .env (set it to whatever you want)`
+
 ```python
 curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" http://192.168.10.27/api/v1/indicators | jq .
 ```
