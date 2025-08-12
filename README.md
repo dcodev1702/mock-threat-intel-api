@@ -46,7 +46,7 @@ See `.env`. Notable:
 - `GENERATE_EVERY_SECONDS` — default 10800 (3h)
 - `TAXII_INDICATORS_ONLY` — force TAXII to indicators only
 - `SOURCE_SYSTEM` — defaults to `STEELCAGE.AI X-GEN TI PLATFORM`
-  * This is REQUIRED when Uploading TI to Sentinels Preview API
+  * This is REQUIRED when Uploading TI to Microsoft Sentinels TI Preview REST API
 
 
 <img width="1065" height="427" alt="image" src="https://github.com/user-attachments/assets/909c8d6b-3025-469b-af07-988689892f22" />
