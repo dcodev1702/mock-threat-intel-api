@@ -68,9 +68,9 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 :link: [Microsoft Sentinel TI Upload Preview API](https://learn.microsoft.com/en-us/azure/sentinel/stix-objects-api) <br/>
 ☝️ This assumes & requires the following: <br/>
     * An Azure Subscription <br/>
-    * Priviledged Access
-    * A Sentinel Enabled Log Analytics Workspace (LAW)
-    * Application Registration & Secret/Cert
+    * Priviledged Access <br/>
+    * A Sentinel Enabled Log Analytics Workspace (LAW) <br/>
+    * Application Registration & Secret/Cert <br/>
       * Microsoft Sentinel Contributor RBAC assigned to the LAW via IAM
 <img width="2148" height="1039" alt="image" src="https://github.com/user-attachments/assets/083fde62-9bc7-43df-b082-cd697f09f643" />
 
