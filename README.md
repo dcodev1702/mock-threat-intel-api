@@ -7,9 +7,10 @@
 - **Top-level `sourcesystem` field** included in list responses.
 
 ## Build & Run
-```bash
+```python
 docker build -t mock-sc-xgen-ti-api-alpine .
-mkdir -p ./data
+```
+```python
 docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env-file .\.env  mock-sc-xgen-ti-api-alpine:latest
 ```
 
