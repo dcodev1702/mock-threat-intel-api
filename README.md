@@ -1,4 +1,4 @@
-# Mock STIX/TAXII v2.1 TI GENERATION & REST API 
+# :racing_car: Mock STIX/TAXII v2.1 TI GENERATION & REST API 
 
 - FastAPI app with in-container generator (every 3 hours by default).
 - Auth via `API_KEYS` (X-API-Key or Bearer).
