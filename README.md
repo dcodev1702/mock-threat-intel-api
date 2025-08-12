@@ -16,7 +16,7 @@
 git clone https://github.com/dcodev1702/mock-threat-intel-api.git
 cd mock-threat-intel-api
 ```
-### :heavy_check_mark: Build the containerized Mock TI Generation & API Endpoint solution
+### :heavy_green_check_mark: Build the containerized Mock TI Generation & API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
