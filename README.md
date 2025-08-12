@@ -6,7 +6,7 @@
 - Cursor paging (`next`), `types=` filters, and TAXII `ETag`/`Last-Modified`.
 - **Top-level `sourcesystem` field** included in list responses.
 
-## Assumptions
+## :bulb: Assumptions
 - You have access docker
 - You have basic familiarity with running containerized workloads
   * [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
