@@ -14,6 +14,7 @@
 ### Download & Unzip or clone this GitHub repo!
 ```bash
 git clone https://github.com/dcodev1702/mock-threat-intel-api.git
+cd mock-threat-intel-api
 ```
 ### Build the containerized Mock TI Generation & API Endpoint solution
 ```python
