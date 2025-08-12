@@ -11,6 +11,10 @@
 - You have basic familiarity with running containerized workloads
   * [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
 
+### Download & Unzip or clone this GitHub repo!
+```python
+git clone https://github.com/dcodev1702/mock-threat-intel-api.git
+```
 ### Build the containerized Mock TI Generation & API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
