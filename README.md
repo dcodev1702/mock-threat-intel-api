@@ -6,12 +6,17 @@
 - Cursor paging (`next`), `types=` filters, and TAXII `ETag`/`Last-Modified`.
 - **Top-level `sourcesystem` field** included in list responses.
 
-## Build & Run
+## Build the containerized Mock TI API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
+ Run the continaerized Mock TI API Endpoint solution 
 ```python
 docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env-file .\.env  mock-sc-xgen-ti-api-alpine:latest
+```
+Query SC X-GEN TI API Endpoint (w/ auth)
+```python
+curl -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" http://192.168.10.27/api/v1/indicators | jq .
 ```
 
 ## Endpoints
