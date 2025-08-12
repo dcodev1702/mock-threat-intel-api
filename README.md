@@ -1,4 +1,4 @@
-# Mock STIX/TAXII 2.1 TI API (Indicators + Mixed Types)
+# Mock STIX/TAXII 2.1 TI GENERATION & REST API 
 
 - FastAPI app with in-container generator (every 3 hours by default).
 - Auth via `API_KEYS` (X-API-Key or Bearer).
