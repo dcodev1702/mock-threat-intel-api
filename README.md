@@ -32,17 +32,17 @@ docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env
 curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" http://192.168.10.27/api/v1/indicators | jq .
 ```
 
-## Endpoints
-- :link: `GET /healthz`
+## :globe_with_meridians: REST API Endpoints
+:link: `GET /healthz`
   - Auth not required to get health status  
-- `GET /api/v1/indicators?since=...&page_size=...&next=...`
+:link: `GET /api/v1/indicators?since=...&page_size=...&next=...`
   - Response: `{ count, total, more, next, sourcesystem, stixobjects }`
-- `GET /api/v1/collections`
-- `GET /api/v1/collections/{id}/objects?since=...&types=indicator,attack-pattern&page_size=...&next=...`
+:link: `GET /api/v1/collections`
+:link: `GET /api/v1/collections/{id}/objects?since=...&types=indicator,attack-pattern&page_size=...&next=...`
   - Response: `{ objects, sourcesystem, total, more, next }`
-- `GET /taxii2/`
-- `GET /taxii2/root/collections`
-- `GET /taxii2/root/collections/{id}/objects?limit=...&added_after=...&types=...&next=...`
+:link: `GET /taxii2/`
+:link: `GET /taxii2/root/collections`
+:link: `GET /taxii2/root/collections/{id}/objects?limit=...&added_after=...&types=...&next=...`
   - Response (`application/taxii+json`): `{ objects, sourcesystem, more, next }` with `ETag`, `Last-Modified`
 
 ## Env
