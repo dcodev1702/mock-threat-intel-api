@@ -11,7 +11,7 @@
 - You have basic familiarity with running containerized workloads
   * [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
 
-### Download & Unzip or clone this GitHub repo!
+### :heavy_check_mark: Download & Unzip or clone this GitHub repo!
 ```bash
 git clone https://github.com/dcodev1702/mock-threat-intel-api.git
 cd mock-threat-intel-api
