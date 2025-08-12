@@ -45,3 +45,6 @@ See `.env`. Notable:
 <img width="1065" height="427" alt="image" src="https://github.com/user-attachments/assets/909c8d6b-3025-469b-af07-988689892f22" />
 
 <img width="893" height="1192" alt="image" src="https://github.com/user-attachments/assets/97b5a238-6408-475d-bc76-e17fa4efd17b" />
+
+<img width="2148" height="1039" alt="image" src="https://github.com/user-attachments/assets/083fde62-9bc7-43df-b082-cd697f09f643" />
+
