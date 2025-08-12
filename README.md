@@ -64,8 +64,8 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 ```
 <img width="893" height="1192" alt="image" src="https://github.com/user-attachments/assets/97b5a238-6408-475d-bc76-e17fa4efd17b" />
 
-## Transmit TI JSON [stixobjects] from Mock REST API to Sentinel's TI Upload API (Preview) for enhanced Threat Detection
-[Microsoft Sentinel TI Upload Preview API](https://learn.microsoft.com/en-us/azure/sentinel/stix-objects-api)
+## ↔️ Transmit TI JSON [stixobjects] from Mock REST API to Sentinel's TI Upload API (Preview) for enhanced Threat Detection
+:link: [Microsoft Sentinel TI Upload Preview API](https://learn.microsoft.com/en-us/azure/sentinel/stix-objects-api)
   * This assumes & requires the following:
     * An Azure Subscription
     * Priviledged Access
