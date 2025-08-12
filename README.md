@@ -57,7 +57,7 @@ See `.env.example`. Notable:
 
 <img width="1065" height="427" alt="image" src="https://github.com/user-attachments/assets/909c8d6b-3025-469b-af07-988689892f22" />
 
-## MOCK TI REST API ENDPOINT
+## :computer: MOCK TI REST API ENDPOINT
 -`Generate synthetic TI indicators and provide a mock TI REST API endpoint to pull JSON array of stixobjects (indicators) from.` <br/>
 ```python
 curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" http://192.168.10.27/api/v1/indicators | jq .`
