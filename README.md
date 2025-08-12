@@ -29,6 +29,7 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 
 ## Endpoints
 - `GET /healthz`
+  - Auth not required to get health status  
 - `GET /api/v1/indicators?since=...&page_size=...&next=...`
   - Response: `{ count, total, more, next, sourcesystem, stixobjects }`
 - `GET /api/v1/collections`
