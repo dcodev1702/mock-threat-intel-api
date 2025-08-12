@@ -16,7 +16,7 @@
 git clone https://github.com/dcodev1702/mock-threat-intel-api.git
 cd mock-threat-intel-api
 ```
-### :heavy_green_check_mark: Build the containerized Mock TI Generation & API Endpoint solution
+### :heavy_check_mark: Build the containerized Mock TI Generation & API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
@@ -34,16 +34,16 @@ curl -s -H "X-API-Key: QUxMIFVSIEJBU0UgQU5EIEFQSSdTIEFSRSBCRUxPTkcgVE8gVVMh" htt
 
 ## :globe_with_meridians: REST API Endpoints
 :link: `GET /healthz`
-       * Auth not required to get health status  <br/>
+       - Auth not required to get health status  <br/>
 :link: `GET /api/v1/indicators?since=...&page_size=...&next=...` <br/>
-       * Response: `{ count, total, more, next, sourcesystem, stixobjects }` <br/> 
+       - Response: `{ count, total, more, next, sourcesystem, stixobjects }` <br/> 
 :link: `GET /api/v1/collections`  <br/>
 :link: `GET /api/v1/collections/{id}/objects?since=...&types=indicator,attack-pattern&page_size=...&next=...` <br/>
-       * Response: `{ objects, sourcesystem, total, more, next }` <br/>
+       - Response: `{ objects, sourcesystem, total, more, next }` <br/>
 :link: `GET /taxii2/` <br/>
 :link: `GET /taxii2/root/collections` <br/>
 :link: `GET /taxii2/root/collections/{id}/objects?limit=...&added_after=...&types=...&next=...` <br/>
-       * Response (`application/taxii+json`): `{ objects, sourcesystem, more, next }` with `ETag`, `Last-Modified` <br/>
+       - Response (`application/taxii+json`): `{ objects, sourcesystem, more, next }` with `ETag`, `Last-Modified` <br/>
 
 ## Env
 See `.env`. Notable:
