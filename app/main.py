@@ -27,8 +27,10 @@ COLLECTION_ID = os.getenv("COLLECTION_ID", "indicators")
 COLLECTION_TITLE = os.getenv("COLLECTION_TITLE", "Synthetic Indicators (STIX 2.1)")
 TAXII_INDICATORS_ONLY = os.getenv("TAXII_INDICATORS_ONLY", "false").lower() == "true"
 SOURCE_SYSTEM = os.getenv("SOURCE_SYSTEM", "STEELCAGE.AI X-GEN TI PLATFORM")
+API_VERSION = os.getenv("API_VERSION", "1702.93.3082")
+API_KEYS = os.getenv("API_KEYS", "").split(",")
 
-app = FastAPI(title="Mock TI API", version="2.2.0", description="Mock STIX/TAXII 2.1 Threat Intelligence API")
+app = FastAPI(title="Mock X-GEN TI REST API", version=API_VERSION, description="Mock X-GEN STIX/TAXII 2.1 Threat Intelligence REST API")
 
 if CORS_ORIGINS:
     app.add_middleware(
@@ -102,7 +104,22 @@ async def _start_generator():
 
 @app.get("/healthz")
 def healthz():
-    return {"status": "ok"}
+    return {
+        "status": "ok", 
+        "Host": HOST,
+        "Port": PORT,
+        "Greeting": "Hello, friend.",
+        "API_KEYS": API_KEYS,
+        "SourceSystem": SOURCE_SYSTEM, 
+        "Version": API_VERSION, 
+        "Timestamp": datetime.now(timezone.utc).isoformat(),
+        "Additional Info": "Mock X-GEN TI REST API", 
+        "GenAI-Model": "SKYNET.AI", 
+        "GenAI-Engine": "8.3.90283128853", 
+        "GenAI-Model-Status": "online", 
+        "PowerSource": "Nuclear",
+        "Transport": "Quantum"
+    }
 
 @app.get("/api/v1/indicators", dependencies=[Depends(require_api_key)])
 def get_indicators(
