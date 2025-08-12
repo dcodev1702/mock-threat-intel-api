@@ -16,16 +16,16 @@
 git clone https://github.com/dcodev1702/mock-threat-intel-api.git
 cd mock-threat-intel-api
 ```
-### Build the containerized Mock TI Generation & API Endpoint solution
+### :heavy_check_mark: Build the containerized Mock TI Generation & API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
-### Run the continaerized Mock TI API Endpoint solution <br/>
+### :heavy_check_mark: Run the continaerized Mock TI API Endpoint solution <br/>
  -`Synthetic Threat Indicators are generated at boot and every 3 hours (default)`
 ```python
 docker run -d --name mock-sc-xgen-ti-api -p 80:8000 -v $PWD/data:/app/data --env-file .\.env  mock-sc-xgen-ti-api-alpine:latest
 ```
-### Query SC X-GEN TI API Endpoint (w/ auth) <br/>
+### :heavy_check_mark: Query SC X-GEN TI API Endpoint (w/ auth) <br/>
 -`Default API KEY is provided via .env (set it to whatever you want)`
 
 ```python
