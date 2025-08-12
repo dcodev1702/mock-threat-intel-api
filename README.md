@@ -11,7 +11,7 @@
 - You have basic familiarity with running containerized workloads
   * [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
 
-## Build the containerized Mock TI Generation & API Endpoint solution
+### Build the containerized Mock TI Generation & API Endpoint solution
 ```python
 docker build -t mock-sc-xgen-ti-api-alpine .
 ```
